@@ -1,5 +1,23 @@
 ### Lab: Start AutoGen Studio
 
+Install `autogenstudio` in the terminal by running following commands in the terminal: 
+
+```
+# Download the get-pip.py script
+curl -O https://bootstrap.pypa.io/get-pip.py
+
+# Install pip using the get-pip.py script with Python 3.11
+python3.11 get-pip.py
+
+# Verify pip version
+python3.11 -m pip --version
+
+# Install distutils for Python 3.11
+sudo apt install -y python3.11-distutils
+
+pip install autogenstudio
+```
+
 Autogen will require an API Key. We will use OpenAI so execute this command on the command line:
 
 `export OPENAI_API_KEY="your-key-here"`
@@ -16,4 +34,4 @@ Note: to run this in the background so it doesn’t end when the terminal ends, 
 
 #### Access AutoGen Studio
 
-Open your web browser and go to `http://<your-lightsail-instance-public-ip>:8081/`. You should now see the AutoGen Studio interface.
+Open your web browser and go to `http://<your-instance-dns-ip>:8081/`. You should now see the AutoGen Studio interface.
